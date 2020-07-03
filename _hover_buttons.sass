@@ -1,5 +1,37 @@
-$test: 45px
+
+$standard-color: #e15f41
 $standard-shadow-color: #e15f4190
+
+$red-color: #FFADAD
+$red-shadow: #FFADAD90
+
+$orange-color: #FFD6A5
+$orange-shadow: #FFD6A590
+
+$yellow-color: #FDFFB6
+$yellow-shadow: #FDFFB690
+
+$green-color: #CAFFBF
+$green-shadow: #CAFFBF90
+
+$light-blue-color: #9BF6FF
+$light-blue-shadow: #9BF6FF90
+
+$blue-color: #A0C4FF
+$blue-shadow: #A0C4FF90
+
+$purple-color: #BDB2FF
+$purple-shadow: #BDB2FF90
+
+$pink-color: #ffc6ff
+$pink-shadow: #ffc6ff90
+
+$white-color: #fffffc
+$white-shadow: #fffffc90
+
+
+
+$standard-shadow-color3: #e15f4190
 
 
 .hover-button-container
@@ -15,7 +47,7 @@ $standard-shadow-color: #e15f4190
     width: 180px
     height: 60px
     border: none
-    background-color: #e15f41
+    background-color: $blue-color
     color: #fff
     font-size: 18px
     border-radius: 6px
@@ -29,6 +61,11 @@ $standard-shadow-color: #e15f4190
         width: 120px
         height: 40px
 
+        &-blue
+            background-color: $blue-color
+            //box-shadow: 0 15px 15px $blue-shadow
+            
+
     &-md
         @extend .hover-btn
         width: 180px
@@ -37,7 +74,7 @@ $standard-shadow-color: #e15f4190
     &-lg
         @extend .hover-btn
         width: 240px
-        heigth: 80px
+        height: 80px
 
     &-xl
         @extend .hover-btn
@@ -52,7 +89,7 @@ $standard-shadow-color: #e15f4190
 
 .hover-up:hover
     transform: rotateX(15deg)
-    box-shadow: 0 15px 15px $standard-shadow-color
+    box-shadow: 0 15px 15px $blue-shadow
 
 .hover-down:hover
     transform: rotateX(-15deg)
